@@ -1,0 +1,327 @@
+html {
+    margin: 0;	
+}
+
+body {
+	width: 100%; 	
+}
+header {
+	width: 100%;
+	height: 70px;
+	position: fixed;
+    z-index: 10;
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+	text-align: center;
+    background-color: #4B0082;
+}
+
+#head {
+	flex: 1 1 auto;
+} 
+
+#nav {
+    flex: 1 1 auto;
+}
+
+h1 {
+	margin-bottom: 0;
+	font-weight: normal;
+	color: rgb(250, 250, 250);	
+}
+
+h5 {
+	margin-top: 0;
+	color: rgb(250, 250, 250);	
+}
+
+nav ul li {	
+	display: inline-block;
+	list-style-type: none;
+	flex: 1 1 auto;
+}
+
+nav li a {
+	color: rgb(250, 250, 250); 
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+h2, h3 { 
+    color: #4B0082;
+    margin-bottom: .5em;	
+}
+	
+#first {
+	width: 100%;
+    padding: 2.5em 0;
+    top: 5rem;
+    position: relative;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#first img {
+	padding: 0;
+    margin: 0 auto;
+	border-radius: 60px;
+}
+
+div #me, #contact {
+	font-size: 1.125em;
+    text-align: center;
+    margin: .625em auto;
+}
+
+#second {
+    margin: 1.25em auto;
+    top: 5rem;
+    position: relative;
+}
+
+.ido {
+	float: left;
+    margin: 1.25em 1%;	
+}
+
+#second li {
+	margin: 0;	
+    font-size: 1.125em;
+	padding-left: 2%;
+	padding-top: .125em;
+    padding-bottom: .3125em;
+	list-style-type: none;
+    background-image: -webkit-linear-gradient(top, white 80%, #4B0082 100%); 
+}
+
+#second ul {
+    padding-bottom: 1.25em;
+}
+
+#second h3, ul {
+    padding: 0;
+}
+
+#third  {
+	clear: both;
+    margin: 1.25em 0;
+    top: 5rem;
+    position: relative;
+    text-align: center;
+    padding: 1.25em 0;
+    background-color: #f5f5f5;
+}
+
+#third p {
+	width: 70%;
+    font-size: 1.25em;
+    margin: .625em auto;
+}
+
+#art1, #art2 {
+    top: 5rem;
+    position: relative;
+    text-align: center;
+}
+
+#art1 h2 {
+	padding-top: 1.25rem;
+}
+
+#look a {
+	color: #4B0082;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+#fourth {
+	height: 100px;
+    top: 5rem;
+    position: relative;
+	clear: both; 
+	padding: .3125em 0 .875em;
+    background-color: #4B0082; 
+}
+
+#fourth p {
+    font-size: 1em; 
+    text-align: center;
+	color: rgb(250, 250, 250);
+}
+
+#fourth p img {
+	display: inline;
+    padding: 0 1% .625em;     
+}
+	
+
+@media only screen and (min-width: 280px) {
+
+h1 {	
+	font-size: 1.125em;
+}
+
+h5 { 	
+	font-size: .625em;	
+}
+
+nav ul li {
+	padding-right: .625em;
+}
+
+nav li a {
+    font-size: .875em;
+}
+
+div #me, #contact {
+	width: 90%;
+	padding: .3125em;
+}
+
+.ido {
+	width: 90%;
+	float: none;
+    margin: 0 auto;	
+}
+
+#project1, #project2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around; 
+	align-items: center;
+    margin: 1.25em 0;
+    padding: 1.25em 0;
+}
+
+.pro img {
+	width: 80%;
+	float: none;
+	flex: 1 1 auto;	
+    margin: 0;
+    padding: 1.25em 0;
+}
+}
+
+@media only screen and (min-width: 320px) {
+
+h1 {	
+	font-size: 1.375em;
+}
+}
+
+@media only screen and (min-width: 480px) {
+
+h1 {	
+	font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1em;	
+}
+
+nav li a {
+    font-size: 1em;
+}
+
+#second {
+	width: 70%;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+header {
+	height: 90px;
+}
+
+h1 {
+    font-size: 1.625em;	
+}
+
+nav ul li {
+	padding: 0 .625em;
+}
+
+div #me, #contact {
+	width: 80%;
+}
+
+#second {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: center;	
+	align-items: center;
+    margin: .25em auto;
+}
+
+.ido:first-child {
+	width: 60%;
+	float: left;	
+}
+
+.ido {
+	width: 45%;
+	float: left;	
+}
+
+#project1, #project2 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-around;	
+	align-items: center;
+    margin: 1.25em 0;
+    padding: 1.25em 0;
+}
+
+.pro {
+	width: 45%;
+	flex: 1 1 auto;
+    padding: 1.25em 0;
+}
+
+#art1 h2 {
+	padding-top: 2.5rem;
+}
+}
+
+@media only screen and (min-width: 960px) {
+
+h1 {
+    font-size: 1.875em;	
+}
+
+div #me, #contact {
+	width: 60%;
+}
+
+#second {
+	width: 92%;
+}
+
+#second .ido:first-child {
+	width: 36%;
+}
+
+.ido {
+	width: 23%;
+    margin: 0 3%;	
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+.pro {
+	width: 27%;
+}
+}
